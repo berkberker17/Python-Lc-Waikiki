@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.6.5 on win32)" generated="20211214 21:12:19.333" rpa="false" schemaversion="2">
+<suite id="s1" name="projeTest" source="C:\develop\robot\Testinium\Test\projeTest.robot">
+<test id="s1-t1" name="verify check the result">
+<kw name="check the result" library="projeApp">
+<kw name="create session" library="proje">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211214 21:12:20.161" level="INFO">Opening browser 'chrome' to base url 'https://www.lcwaikiki.com/tr-TR/TR'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211214 21:12:23.509" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211214 21:12:23.508" endtime="20211214 21:12:23.509"/>
+</kw>
+<msg timestamp="20211214 21:12:23.513" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 94
+Current browser version is 96.0.4664.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" starttime="20211214 21:12:20.161" endtime="20211214 21:12:23.513"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20211214 21:12:23.513" endtime="20211214 21:12:23.513"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header__container"]/div/header/div[2]/div/div[1]/a/img</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211214 21:12:23.514" endtime="20211214 21:12:23.514"/>
+</kw>
+<status status="FAIL" starttime="20211214 21:12:20.160" endtime="20211214 21:12:23.514"/>
+</kw>
+<kw name="click login button" library="proje">
+<status status="NOT RUN" starttime="20211214 21:12:23.515" endtime="20211214 21:12:23.515"/>
+</kw>
+<kw name="click search button" library="proje">
+<status status="NOT RUN" starttime="20211214 21:12:23.515" endtime="20211214 21:12:23.515"/>
+</kw>
+<kw name="scroll down" library="proje">
+<status status="NOT RUN" starttime="20211214 21:12:23.516" endtime="20211214 21:12:23.516"/>
+</kw>
+<kw name="click search pantolon" library="proje">
+<status status="NOT RUN" starttime="20211214 21:12:23.516" endtime="20211214 21:12:23.516"/>
+</kw>
+<kw name="close session" library="proje">
+<status status="NOT RUN" starttime="20211214 21:12:23.516" endtime="20211214 21:12:23.516"/>
+</kw>
+<status status="FAIL" starttime="20211214 21:12:20.160" endtime="20211214 21:12:23.517"/>
+</kw>
+<status status="FAIL" starttime="20211214 21:12:20.157" endtime="20211214 21:12:23.518">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 94
+Current browser version is 96.0.4664.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<status status="FAIL" starttime="20211214 21:12:19.336" endtime="20211214 21:12:23.521"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="projeTest">projeTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
